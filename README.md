@@ -11,13 +11,4 @@
 
 
 
-Summary
- ➢Generate Wallet: Enter a password to create a new Ethereum wallet and retrieve its 
-public and private keys.
- ➢Split Private Key: Enter a private key and split it into multiple parts.
- ➢Recover Private Key: Enter parts of a private key to recover the original private key.
- ➢Sign Message: Enter a message and sign it using the private key.
- ➢Verify Signature: Enter a message, public key, and signature to verify the 
-authenticity of the signature.
- These steps collectively demonstrate how to manage Ethereum wallets and perform 
-cryptographic operations using Shamir's Secret Sharing and the provided system interface.
+
