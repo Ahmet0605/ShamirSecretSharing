@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamir's Secret Sharing and Ethereum Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shamir's Secret Sharing and Ethereum Wallet Management</h1>
+
+        <!-- Form for Wallet Generation -->
+        <div class="form-section">
+            <h2>Generate Ethereum Wallet</h2>
+            <input type="password" id="password" placeholder="Enter Wallet Password">
+            <button onclick="generateWallet()">Generate Wallet</button>
+            <div id="walletDetails" class="result"></div>
+        </div>
+
+        <!-- Form for Private Key Operations -->
+        <div class="form-section">
+            <h2>Private Key Operations</h2>
+            <input type="text" id="privateKey" placeholder="Enter Private Key for Splitting">
+            <input type="number" id="n" placeholder="Enter N (Total parts)">
+            <input type="number" id="k" placeholder="Enter K (Threshold)">
+            <button onclick="splitPrivateKey()">Split Private Key</button>
+            <div id="splitDetails" class="result"></div>
+            
+            <input type="text" id="shares" placeholder="Enter Shares for Recovery">
+            <button onclick="recoverPrivateKey()">Recover Private Key</button>
+            <div id="recoveryDetails" class="result"></div>
+        </div>
+
+        <!-- Form for Message Signing and Verification -->
+        <div class="form-section">
+            <h2>Sign and Verify Messages</h2>
+            <input type="text" id="message" placeholder="Enter Message to Sign">
+            <button onclick="signMessage()">Sign Message</button>
+            <div id="signatureDetails" class="result"></div>
+            
+            <input type="text" id="verifyMessage" placeholder="Enter Message to Verify">
+            <input type="text" id="publicKey" placeholder="Enter Public Key for Verification">
+            <input type="text" id="signature" placeholder="Enter Signature for Verification">
+            <button onclick="verifySignature()">Verify Signature</button>
+            <div id="verificationDetails" class="result"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
